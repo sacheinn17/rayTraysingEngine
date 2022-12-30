@@ -11,7 +11,7 @@ set (sourceDir "${PROJECT_SOURCE_DIR}/src" "${PROJECT_SOURCE_DIR}/dependences/cl
 
 find_package(OpenGL REQUIRED)
 
-set (libraries "OpenGL::GL" "OpenGL::OpenGL" "glfw" "dl")
+set (libraries "${PROJECT_SOURCE_DIR}/dependences/glfw/library/libglfw3.a")
 
 set (source_files 
 "${PROJECT_SOURCE_DIR}/src/main.cpp"
